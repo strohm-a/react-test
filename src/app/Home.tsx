@@ -7,14 +7,16 @@ export class Home extends Component {
 
     let mkdown: string = '### hello, markdown!';
     let converter: Converter = new Converter();
-    let html: string = converter.makeHtml(mkdown);
-    console.log('HTML: ' + html);
+    let markdownHtml: string = converter.makeHtml(mkdown);
+    console.log('HTML: ' + markdownHtml);
+
+    markdownHtml += `<div>Hi Strohm</div>`;
 
     return (
       <div className={'page'}>
         <h2>Home</h2>
 
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div className={'markdown'} dangerouslySetInnerHTML={{ __html: markdownHtml }} />
       </div>
     );
   }

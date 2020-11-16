@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import '../scss/App.scss';
 import { Home } from './Home';
 import { About } from './About';
-import { Dashboard } from './Dashboard';
+import { PollyService } from './Polly';
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).
@@ -27,7 +27,7 @@ class App extends Component {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/dashboard">Dashboard</Link>
+              <Link to="/polly">Amazon Polly Service</Link>
             </li>
           </ul>
 
@@ -47,8 +47,8 @@ class App extends Component {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/dashboard">
-              <Dashboard />
+            <Route path="/polly">
+              <PollyService />
             </Route>
           </Switch>
         </div>

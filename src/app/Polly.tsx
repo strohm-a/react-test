@@ -51,10 +51,10 @@ export class PollyService extends Component {
     );
   }
 
-  textElement: HTMLInputElement;
-  audioSourceElement: HTMLSourceElement;
-  audioPlaybackElement: HTMLAudioElement;
-  resultElement: HTMLElement;
+  textElement!: HTMLInputElement;
+  audioSourceElement!: HTMLSourceElement;
+  audioPlaybackElement!: HTMLAudioElement;
+  resultElement!: HTMLElement;
 
   componentDidMount() {
     this.textElement = (document.getElementById('textEntry') as HTMLInputElement);
@@ -63,7 +63,7 @@ export class PollyService extends Component {
 
     this.audioPlaybackElement = (document.getElementById('audioPlayback') as HTMLAudioElement);
 
-    this.resultElement = document.getElementById('result');
+    this.resultElement = (document.getElementById('result') as HTMLElement);
   }
 
   async speakText(): Promise<any> {

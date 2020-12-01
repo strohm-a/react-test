@@ -29,7 +29,7 @@ export class PollyService extends Component {
   }
 
   render() {
-    console.log('PollyService.render()');
+    // console.log('PollyService.render()');
 
     return (
       <div className={'page'}>

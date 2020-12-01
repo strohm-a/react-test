@@ -3,12 +3,12 @@ import { Converter } from 'showdown';
 
 export class Home extends Component {
   render() {
-    console.log('Home.render()');
+    // console.log('Home.render()');
 
     let mkdown: string = '### hello, markdown!';
     let converter: Converter = new Converter();
     let markdownHtml: string = converter.makeHtml(mkdown);
-    console.log('HTML: ' + markdownHtml);
+    // console.log('HTML: ' + markdownHtml);
 
     markdownHtml += `<div>Hi Strohm</div>`;
 

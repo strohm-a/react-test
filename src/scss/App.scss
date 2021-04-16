@@ -1,3 +1,5 @@
+@import "Grid";
+
 body {
   height: 100%;
   background-color: #282c34;
@@ -8,15 +10,20 @@ body {
     font-size: calc(10px + 2vmin);
     color: bisque;
 
-    a {
-      color: bisque;
-    }
+  }
+
+  a {
+    color: bisque;
   }
 
   .page {
-    color: aqua;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    color: beige;
+    margin: 2rem;
+
+    h3{
+      border-top: 1px solid orangered;
+      padding-top: 1rem;
+    }
   }
 
   .markdown{
@@ -25,4 +32,18 @@ body {
     background-color: antiquewhite;
   }
 
+  pre > code{
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 1rem;
+    color: #282c34;
+    display: block;
+    font-family: Consolas, Menlo, monospace;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    max-width: 100%;
+    min-width: 100px;
+    word-wrap: normal;
+    }
 }

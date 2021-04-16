@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Current build status: 
+
+![Build Status](https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiSU5WWTNVR0JTQURsRmRVbURxSUhuR05oZFQ3R3VCZmtkT2lUYlZYQ2drcm5DQXJOeFpqbmg0OGJoNitNZzBXZEErL0hpdXd1YkNkdFp5Yk1icGd4elZrPSIsIml2UGFyYW1ldGVyU3BlYyI6IlF1bkY0K0gwNHJIamd6NHQiLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
+
 ## Available Scripts
 
 In the project directory, you can run:

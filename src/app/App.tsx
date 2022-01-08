@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import '../scss/App.scss';
 import { Home } from './Home';
 import { About } from './About';
@@ -33,15 +33,8 @@ class App extends Component {
 
           <hr />
 
-          {/*
-          A <Switch> looks through all its children <Route>
-          elements and renders the first one whose path
-          matches the current URL. Use a <Switch> any time
-          you have multiple routes, but you want only one
-          of them to render at a time
-        */}
-          <Switch>
-            <Route exact path="/">
+          <Routes>
+            <Route path="/">
               <Home />
             </Route>
             <Route path="/about">
@@ -50,7 +43,7 @@ class App extends Component {
             <Route path="/grid">
               <Grid />
             </Route>
-          </Switch>
+          </Routes>
         </div>
       </Router>
     );

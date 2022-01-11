@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Route, Link, Routes, BrowserRouter } from 'react-router-dom';
 import '../scss/App.scss';
 import { Home } from './Home';
 import { About } from './About';
-import Grid from "./Grid";
+import { Grid } from "./Grid";
+
 
 // This site has 3 pages, all of which are rendered
 // dynamically in the browser (not server rendered).

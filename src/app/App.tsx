@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { Route, Link, Routes, BrowserRouter } from 'react-router-dom';
 import '../scss/App.scss';
 import { Home } from './Home';
 import { About } from './About';
@@ -17,7 +17,7 @@ import Grid from "./Grid";
 class App extends Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <div className="app">
           <ul className={'header'}>
             <li>
@@ -34,18 +34,12 @@ class App extends Component {
           <hr />
 
           <Routes>
-            <Route path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/grid">
-              <Grid />
-            </Route>
+            <Route path="/" element={<Home />}/>
+            <Route path="/about" element={<About />}/>
+            <Route path="/grid" element={<Grid />}/>
           </Routes>
         </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
